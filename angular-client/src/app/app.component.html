@@ -1,0 +1,16 @@
+<h2>Mean Docker Starter</h2>
+
+<h4>Connected: {{ connected }}</h4>
+
+<input [(ngModel)]="name" placeholder="name" />
+<input [(ngModel)]="email" placeholder="email" />
+<button (click)="addUser()">Add User</button>
+
+<h4>Users</h4>
+<ul>
+  <li *ngFor="let user of users">
+    Name: {{ user?.name }} | Email: {{ user?.email }}
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
