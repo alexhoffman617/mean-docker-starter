@@ -5,6 +5,8 @@ services:
 
 before_install:
   - docker pull mongo
+
+script:
   - docker-compose up
     # -docker run -d --name mongodb -p 27017:27017 mongo
     # -docker run -d --name express-server -p 3000:3000 express-server:dev
