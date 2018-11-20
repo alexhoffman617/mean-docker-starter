@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  -docker-compose up -build
+  -docker-compose up
   # -docker run -d --name mongodb -p 27017:27017 mongo
   # -docker run -d --name express-server -p 3000:3000 express-server:dev
   # -docker run -d --name angular-client -p  4200:4200 angular-client:dev
